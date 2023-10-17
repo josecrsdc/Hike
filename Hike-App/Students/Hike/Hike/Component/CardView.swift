@@ -12,6 +12,8 @@ struct CardView: View {
     // MARK: - PROPERTIES
     @State private var imageNumber: Int = 1
     @State private var randomNumber: Int = 1
+    @State private var isShowingSheet: Bool = false
+
     
     // MARK: - FUNCTIONS
     
@@ -52,8 +54,12 @@ struct CardView: View {
                         Button {
                             // ACTION: Show a sheet
                             print("The button was pressed")
+                            isShowingSheet.toggle()
                         } label: {
                             CustomButtonView()
+                        }
+                        .sheet(isPresented: $isShowingSheet) {
+                            SettingsView()
                         }
 
                     }
@@ -68,22 +74,12 @@ struct CardView: View {
                 // MARK: - MAIN CONTENT
                 
                 ZStack {
-                    Circle()
-                        .fill(
-                            LinearGradient(
-                                colors: [
-                                    .customIndigoMedium,
-                                    .customSalmonLight
-                                ],
-                                startPoint: .topLeading,
-                                endPoint: .bottomLeading
-                            )
-                        )
-                        .frame(width: 256, height: 256)
+                    CustomCircleView()
                     
                     Image("image-\(imageNumber)")
                         .resizable()
                         .scaledToFit()
+                        .animation(.default, value: imageNumber)
                 }
                 // MARK: - FOOTER
                 
@@ -96,9 +92,21 @@ struct CardView: View {
                         .font(.title2)
                         .fontWeight(.heavy)
                         .foregroundStyle(
-                            LinearGradient(colors: [.customGreenLight, .customGreenMedium], startPoint: .top, endPoint: .bottom)
+                            LinearGradient(
+                                colors: [
+                                    .customGreenLight,
+                                    .customGreenMedium
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
                         )
-                        .shadow(color: .black.opacity(0.25), radius: 0.25, x: 1, y: 2)
+                        .shadow(
+                            color: .black.opacity(0.25),
+                            radius: 0.25,
+                            x: 1,
+                            y: 2
+                        )
                 }
                 .buttonStyle(GradientButton())
 
