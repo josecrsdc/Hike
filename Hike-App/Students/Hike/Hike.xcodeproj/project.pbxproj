@@ -10,6 +10,7 @@
 		DACB92842ADE872400A2A312 /* CustomCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB92832ADE872400A2A312 /* CustomCircleView.swift */; };
 		DACB92862ADE88AA00A2A312 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB92852ADE88AA00A2A312 /* MotionAnimationView.swift */; };
 		DACB92892ADE8EC100A2A312 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB92882ADE8EC100A2A312 /* SettingsView.swift */; };
+		DACB928B2ADEA44700A2A312 /* CustomListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB928A2ADEA44700A2A312 /* CustomListRowView.swift */; };
 		DAE3CA172A4D8A08006B9111 /* HikeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE3CA162A4D8A08006B9111 /* HikeApp.swift */; };
 		DAE3CA192A4D8A08006B9111 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE3CA182A4D8A08006B9111 /* ContentView.swift */; };
 		DAE3CA1B2A4D8A09006B9111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAE3CA1A2A4D8A09006B9111 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		DACB92832ADE872400A2A312 /* CustomCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCircleView.swift; sourceTree = "<group>"; };
 		DACB92852ADE88AA00A2A312 /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
 		DACB92882ADE8EC100A2A312 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DACB928A2ADEA44700A2A312 /* CustomListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListRowView.swift; sourceTree = "<group>"; };
 		DAE3CA132A4D8A08006B9111 /* Hike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE3CA162A4D8A08006B9111 /* HikeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeApp.swift; sourceTree = "<group>"; };
 		DAE3CA182A4D8A08006B9111 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				DAE3CA2C2A4D91B8006B9111 /* CustomButtonView.swift */,
 				DACB92832ADE872400A2A312 /* CustomCircleView.swift */,
 				DACB92852ADE88AA00A2A312 /* MotionAnimationView.swift */,
+				DACB928A2ADEA44700A2A312 /* CustomListRowView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			files = (
 				DAE3CA192A4D8A08006B9111 /* ContentView.swift in Sources */,
 				DACB92842ADE872400A2A312 /* CustomCircleView.swift in Sources */,
+				DACB928B2ADEA44700A2A312 /* CustomListRowView.swift in Sources */,
 				DAE3CA252A4D8B7A006B9111 /* CardView.swift in Sources */,
 				DAE3CA172A4D8A08006B9111 /* HikeApp.swift in Sources */,
 				DAE3CA2D2A4D91B8006B9111 /* CustomButtonView.swift in Sources */,
@@ -320,6 +324,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hike/Preview Content\"";
@@ -349,6 +354,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hike/Preview Content\"";

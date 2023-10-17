@@ -60,6 +60,8 @@ struct CardView: View {
                         }
                         .sheet(isPresented: $isShowingSheet) {
                             SettingsView()
+                                .presentationDragIndicator(.visible)
+                                .presentationDetents([.medium, .large])
                         }
 
                     }
